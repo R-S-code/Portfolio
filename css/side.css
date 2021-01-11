@@ -1,0 +1,68 @@
+.left-coins-wrapper {
+  display: none;
+  left: 30px;
+  position: fixed;
+  top: 10vh;
+  width:  100px;
+}
+
+@media screen and (min-width: 1200px){
+  .left-coins-wrapper {
+    left: calc(50% - 550px);
+  }
+}
+
+.right-coins-wrapper {
+  display: none;
+  position: fixed;
+  right: 30px;
+  bottom: 10vh;
+  width:  100px;
+}
+
+@media screen and (min-width: 1200px){
+  .right-coins-wrapper {
+    right: calc(50% - 550px);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .left-coins-wrapper {
+    display: block;
+  }
+  .right-coins-wrapper {
+    display: block;
+  }
+}
+
+@keyframes rotateCoin {
+  0% {
+    transform: scale(4) rotateY(0deg);  
+  }
+  25% {
+    transform: scale(4) rotateY(90deg);  
+  }
+  50% {
+    transform: scale(4) rotateY(180deg);
+  }
+  75% {
+    transform: scale(4) rotateY(270deg);  
+}
+  100% {
+    transform: scale(4) rotateY(360deg);  
+  }
+}
+
+.right-coin-container {
+  text-align: right;
+}
+
+.coin-container > i {
+  animation: rotateCoin 3s infinite linear;
+  transform-origin: 50% 0;
+}
+
+.coin-container .nes-icon.is-large {
+  margin: 0;
+}
+

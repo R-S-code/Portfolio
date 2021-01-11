@@ -1,0 +1,305 @@
+@charset "UTF-8";
+@import url("../node_modules/destyle.css/destyle.css");
+@import url("../node_modules/nes.css/css/nes.css");
+@import url("side.css");
+
+@font-face {
+  font-family: 'PixelMplus10R';
+  src: url(../PixelMplus/PixelMplus10-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'PixelMplus10B';
+  src: url(../PixelMplus/PixelMplus10-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'PixelMplus12R';
+  src: url(../PixelMplus/PixelMplus12-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'PixelMplus12B';
+  src: url(../PixelMplus/PixelMplus12-Bold.ttf);
+}
+
+.opacity_none {
+  opacity: 0;
+}
+
+.dialog-menu > .nes-btn {
+  width: 65px;
+  margin-left: 0;
+}
+
+body {
+  background-color: #222222;
+  color: white;
+  font-family: 'PixelMplus10R';
+  font-size: 16px;
+  padding: 40px 20px;
+}
+
+.whole-container {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+/* header */
+.message-welcome {
+  border-bottom: solid 2px #ffffff;
+  display: block;
+  font-size: 18px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .message-welcome {
+    display: inline-block;
+  }
+}
+
+.player-name {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.site-title-wrapper {
+  text-align: center;
+}
+
+.site-title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.site-title-code {
+  margin-top: 20px;
+}
+
+/* main */
+
+main {
+  margin-top: 20px;
+}
+
+.woods-wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.top-icon-pokemon {
+  height: 65px;
+  transform: scale(0.5, 0.5);
+  transform-origin: left center;
+  width: 65px;
+}
+
+  /* 名前 */
+.yourname-change-wrapper .nes-container.is-dark {
+  margin-top: 20px;
+}
+
+.yourname-change-wrapper .nes-container.is-rounded {
+  padding: 10px 10px 10px 0; 
+}
+
+.yourname-contents {
+  align-items: center;
+  display: flex;
+  height: 60px;
+}
+
+.yourname-container i {
+  -webkit-transform: scale(0.5, 0.5);
+          transform: scale(0.5, 0.5);
+}
+
+.input-yorname-field-wrapper {
+  padding: 5px;
+  width: 100%;
+}
+
+.input-yorname-field-wrapper .nes-input {
+  margin: 0;
+}
+
+.input-yourname-field {
+  padding: 0 0 0 5px;
+}
+
+.nes-container.with-title > .title {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.btn-name-change {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+  /* ポケモン*/
+.starter-pokemon-text {
+  font-size: 28px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.side-icon-change-wrapper {
+  margin-top: 40px;
+}
+
+.side-icon-change-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.pokeball-wrapper {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+}
+
+.pokeball-wrapper i  {
+  -webkit-transform: scale(0.7, 0.7);
+  transform-origin: left top
+}
+
+.pokemon-wrapper {
+  width: 100%;
+}
+
+.pokemon-wrapper .nes-container.is-rounded {
+  padding: 5px 0 0 0;
+}
+
+.pokemon-container {
+  height: 100px;
+}
+
+.pokemon-container i {
+  display: block;
+  -webkit-transform: scale(0.5, 0.5);
+  margin-right: 15px;
+  transform: scale(0.5, 0.5);
+  transform-origin: right top;
+}
+
+.pokemon-content-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 5px 5px 0 10px;
+}
+
+.pokemon-content-wrapper button {
+  height: 50px;
+  margin-right: -45px;
+  width: 100%;
+}
+
+  /* information */
+.information-wrapper{
+  font-size: 20px;
+  margin-top: 80px;
+}
+
+.information-wrapper .nes-container.is-rounded {
+  padding-left: 0;
+}
+
+.information-contents-wrapper  {
+  padding: 20px 25px 10px;
+}
+
+.information-container {
+  font-size: 20px;
+}
+
+.information-content-text {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.information-content {
+  align-items: center;
+  display: flex;
+  margin-top: 20px;
+}
+
+.information-content span {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.information-content a {
+  color: aqua;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+/* octcat */
+.octcat-wrapper {
+  align-items: center;
+  display: flex;
+  margin-top: 80px;
+}
+
+.octcat-container {
+  align-items: center;
+  background-color: white;
+  border-radius: 10%;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  padding: 10px 5px 0 0;
+  width: 100px;
+}
+
+.octcat-container p {
+  transform: scale(0.7, 0.7);
+}
+
+.octcat-comment {
+  color: black;
+  margin-left: 20px;
+}
+
+/* カービー */
+
+.kirby-wrapper {
+  align-items: center;
+  display: flex;
+  margin-top: 30px;
+}
+
+.kirby-container {
+  align-items: center;
+  background-color: white;
+  border-radius: 10%;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  margin-left: 15px;
+  padding: 15px 0px 0 0;
+  width: 100px;
+}
+
+.kirby-container p {
+  transform: scale(0.7, 0.7);
+}
+
+.kirby-comment {
+  color: black;
+  margin-left: auto;
+}
+
+/* フッター */
+footer {
+  font-size: 24px;
+  margin: 80px 0 20px;
+  text-align: center;
+}
