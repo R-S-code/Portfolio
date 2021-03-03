@@ -196,6 +196,11 @@
 
 <script type="text/javascript" src="./js/title.js"></script>
 <script>
+  const moveToTop = ()=> {
+    window.scroll({
+      top: 0,
+    })
+  }
 
   // 名前変更
   document.getElementById("your_name").innerText = "stranger!";
@@ -204,6 +209,7 @@
   document.getElementById("btn_change_yourname").addEventListener("click", ()=> {
     document.getElementById("your_name").innerText = document.getElementById("input_your_name").value + "!";
     document.getElementById("your_name_octcat").innerText = document.getElementById("input_your_name").value;
+    moveToTop();
   })
 
   // アイコン変更フシギダネ
@@ -212,6 +218,7 @@
     document.getElementById("obj_two").innerHTML = '<i class="nes-bulbasaur top-icon-pokemon"></i>';
     document.getElementById("obj_three").innerHTML = '<i class="nes-bulbasaur top-icon-pokemon"></i>';
     document.getElementById("obj_four").innerHTML = '<i class="nes-bulbasaur top-icon-pokemon"></i>';
+    moveToTop();
   })
 
   // アイコン変更ヒトカゲ
@@ -220,6 +227,7 @@
     document.getElementById("obj_two").innerHTML = '<i class="nes-charmander top-icon-pokemon"></i>';
     document.getElementById("obj_three").innerHTML = '<i class="nes-charmander top-icon-pokemon"></i>';
     document.getElementById("obj_four").innerHTML = '<i class="nes-charmander top-icon-pokemon"></i>';
+    moveToTop();
   })
 
   // アイコン変更ミズガメ
@@ -228,6 +236,7 @@
     document.getElementById("obj_two").innerHTML = '<i class="nes-squirtle top-icon-pokemon"></i>';
     document.getElementById("obj_three").innerHTML = '<i class="nes-squirtle top-icon-pokemon"></i>';
     document.getElementById("obj_four").innerHTML = '<i class="nes-squirtle top-icon-pokemon"></i>';
+    moveToTop();
   })
 </script>
 </body>
