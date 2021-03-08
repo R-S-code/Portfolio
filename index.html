@@ -81,9 +81,9 @@
           </div>
           <div class="pokemon-wrapper">
             <div class="nes-container is-rounded is-dark with-title pokemon-container">
-              <p class="title">bulbasaur</p> 
+              <p class="title">Bulbasaur</p> 
               <div class="pokemon-content-wrapper">
-                <button type="button" class="nes-btn is-success" id="btn_change_bulbasaur" onclick="document.getElementById('dialog-dark-rounded-bulbasaur').showModal();">select</button>
+                <button type="button" class="nes-btn is-success" id="btn_change_bulbasaur" onclick="document.getElementById('dialog-dark-rounded-bulbasaur').showModal();">SELECT</button>
                 <dialog class="nes-dialog is-rounded is-dark" id="dialog-dark-rounded-bulbasaur">
                   <form method="dialog">
                     <p class="title">SELECT BULBASAUR!</p>
@@ -105,9 +105,9 @@
           </div>
           <div class="pokemon-wrapper">
             <div class="nes-container is-rounded is-dark with-title pokemon-container">
-              <p class="title">charmander</p> 
+              <p class="title">Charmander</p> 
               <div class="pokemon-content-wrapper">
-                <button type="button" class="nes-btn is-error" id="btn_change_charmander" onclick="document.getElementById('dialog-dark-rounded-charmander').showModal();">select</button>
+                <button type="button" class="nes-btn is-error" id="btn_change_charmander" onclick="document.getElementById('dialog-dark-rounded-charmander').showModal();">SELECT</button>
                 <dialog class="nes-dialog is-rounded is-dark" id="dialog-dark-rounded-charmander">
                   <form method="dialog">
                     <p class="title">SELECT CHARMANDER!</p>
@@ -129,9 +129,9 @@
           </div>
           <div class="pokemon-wrapper">
             <div class="nes-container is-rounded is-dark with-title pokemon-container">
-              <p class="title">squirtle</p> 
+              <p class="title">Squirtle</p> 
               <div class="pokemon-content-wrapper">
-                <button type="button" class="nes-btn is-primary" id="btn_change_squirtle" onclick="document.getElementById('dialog-dark-rounded-squirtle').showModal();">select</button>
+                <button type="button" class="nes-btn is-primary" id="btn_change_squirtle" onclick="document.getElementById('dialog-dark-rounded-squirtle').showModal();">SELECT</button>
                 <dialog class="nes-dialog is-rounded is-dark" id="dialog-dark-rounded-squirtle">
                   <form method="dialog">
                     <p class="title">SELECT SQUIRTLE!</p>
@@ -154,13 +154,13 @@
         </div>
        
         <p class="nes-balloon from-left octcat-comment">
-          Hello <span id="your_name_octcat"></span>. Have a good time. I'm am a pokemon...(?)
+          Hello <span id="your_name_octcat"></span>. I'm a pokemon...(?)
         </p>
       </div>
 
       <div class="kirby-wrapper">
         <p class="nes-balloon from-right kirby-comment">
-          Year. I think so. 
+          Me too!!! 
         </p>
 
         <div class="kirby-container">
@@ -199,6 +199,7 @@
   const moveToTop = ()=> {
     window.scroll({
       top: 0,
+      behavior: "smooth"
     })
   }
 
@@ -238,6 +239,8 @@
     document.getElementById("obj_four").innerHTML = '<i class="nes-squirtle top-icon-pokemon"></i>';
     moveToTop();
   })
+
+
 </script>
 </body>
 </html>
