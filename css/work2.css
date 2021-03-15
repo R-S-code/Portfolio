@@ -55,8 +55,7 @@ a:hover {
 .main-visual-picture {
   border: 1px solid white;
   display: block;
-  margin: 40px auto 0;
-  width: 50%;
+  width: 100%;
 }
 /* sub-title */
 .sub-title {
