@@ -43,10 +43,6 @@ body {
   margin: 0 auto;
 }
 
-a {
-  cursor: pointer;
-}
-
 /* header */
 .message-welcome {
   border-bottom: solid 2px #ffffff;
